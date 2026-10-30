@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sezzan Dhaba, Mumbra — Late-Night Dhaba | Boom Boom Chicken & Malpua</title>
+<meta name="description" content="Sezzan Dhaba, Mumbra — raat 2 baje tak khula late-night dhaba. Boom Boom Chicken, Lahsun Chana aur Mumbra ka mashhoor Malpua.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,800&family=Public+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--acc:#b45309;--acc2:#451a03;--ink:#171310;--paper:#faf6ef;--card:#fffdf9}
+*{{margin:0;padding:0;box-sizing:border-box}}
+html{{scroll-behavior:smooth}}
+body{{font-family:'Public Sans',system-ui,sans-serif;background:var(--paper);color:var(--ink);line-height:1.55}}
+h1,h2,.serif{{font-family:'Fraunces',serif}}
+header{{position:sticky;top:0;z-index:50;background:rgba(23,19,16,.92);backdrop-filter:blur(8px);color:#fff;display:flex;justify-content:space-between;align-items:center;padding:12px 18px}}
+header .brand{{font-family:'Fraunces',serif;font-weight:800;font-size:1.05rem}}
+header a.call{{background:var(--acc);color:#fff;text-decoration:none;font-weight:700;padding:8px 16px;border-radius:999px;font-size:.9rem}}
+.hero{{background:linear-gradient(160deg,var(--acc2),var(--acc));color:#fff;padding:52px 20px 40px;text-align:center;overflow:hidden}}
+.hero img{{width:100%;max-width:640px;height:230px;object-fit:cover;border-radius:18px;margin-top:22px;box-shadow:0 18px 40px rgba(0,0,0,.35)}}
+.hero h1{{font-size:2.1rem;line-height:1.15;font-weight:800}}
+.hero p{{opacity:.92;max-width:520px;margin:12px auto 0}}
+.chip{{display:inline-block;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.35);padding:6px 14px;border-radius:999px;font-weight:700;font-size:.85rem;margin-top:16px}}
+.btns{{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-top:22px}}
+.btn{{text-decoration:none;font-weight:800;padding:13px 22px;border-radius:999px;font-size:.95rem}}
+.btn.call{{background:#fff;color:var(--ink)}}
+.btn.wa{{background:#22c55e;color:#fff}}
+.btn.dir{{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.5)}}
+.marq{{background:var(--ink);color:#ffd9a0;overflow:hidden;white-space:nowrap;padding:10px 0;font-weight:700;font-size:.9rem}}
+.marq span{{display:inline-block;padding-left:100%;animation:mq 22s linear infinite}}
+@keyframes mq{{to{{transform:translateX(-100%)}}}}
+section{{padding:44px 20px;max-width:860px;margin:0 auto}}
+h2{{font-size:1.6rem;margin-bottom:8px}}
+.sub{{color:#6b6156;margin-bottom:22px}}
+.grid{{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}}
+.dish{{background:var(--card);border:1px solid #eadfce;border-radius:16px;overflow:hidden;box-shadow:0 6px 18px rgba(60,40,10,.06)}}
+.dish img{{width:100%;height:140px;object-fit:cover}}
+.dish div{{padding:14px 16px}}
+.dish b{{display:block;font-size:1.02rem}}
+.dish p{{color:#6b6156;font-size:.9rem;margin-top:4px}}
+.menu{{background:var(--card);border:1px solid #eadfce;border-radius:16px;padding:22px}}
+.menu li{{list-style:none;display:flex;justify-content:space-between;padding:10px 2px;border-bottom:1px dashed #e5d9c3;font-weight:600}}
+.menu li:last-child{{border-bottom:none}}
+.menu .pr{{color:var(--acc);font-weight:800}}
+.gal{{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}}
+.gal img{{width:100%;height:150px;object-fit:cover;border-radius:12px}}
+.note{{font-size:.8rem;color:#8a7f70;margin-top:8px}}
+.info{{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:16px}}
+.info .box{{background:var(--card);border:1px solid #eadfce;border-radius:16px;padding:18px}}
+.info b{{display:block;margin-bottom:6px;color:var(--acc)}}
+.pitch{{background:#171310;color:#f5ead9;border-radius:22px;padding:34px 24px;text-align:center}}
+.pitch h2{{color:#fff}}
+.pitch .cards{{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:14px;margin-top:22px;text-align:left}}
+.pitch .pc{{background:#241e18;border:1px solid #453a2c;border-radius:16px;padding:18px}}
+.pitch .pc b{{font-size:1.05rem}}
+.pitch .price{{font-family:'Fraunces',serif;font-size:1.7rem;color:#ffcf87;margin:6px 0}}
+.pitch ul{{list-style:none;font-size:.9rem;color:#d8cbb6}}
+.pitch li{{padding:3px 0}}
+.pitch li::before{{content:"✓ ";color:#22c55e;font-weight:800}}
+footer{{text-align:center;padding:26px 16px 90px;color:#8a7f70;font-size:.85rem}}
+.slide{{opacity:0;transform:translateX(-46px);transition:all .8s cubic-bezier(.22,.8,.3,1)}}
+.slide.r{{transform:translateX(46px)}}
+.slide.in{{opacity:1;transform:none}}
+.callbar{{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:8px;padding:10px;background:rgba(23,19,16,.94)}}
+.callbar a{{flex:1;text-align:center;text-decoration:none;font-weight:800;padding:12px;border-radius:12px;color:#fff}}
+.callbar .c1{{background:var(--acc)}}.callbar .c2{{background:#22c55e}}
+</style>
+</head>
+<body>
+<header><div class="brand">Sezzan Dhaba</div><a class="call" href="tel:+918082791213">📞 Call</a></header>
+<div class="hero">
+<h1>Sezzan Dhaba</h1>
+<p>Shilphata ka late-night dhaba — Boom Boom Chicken, Lahsun Chana aur Mumbra ka No.1 Malpua, raat 2 baje tak.</p>
+<div class="chip">⭐ 4.5 Google par • Roz 7 PM – 2 AM</div>
+<div class="btns">
+<a class="btn call" href="tel:+918082791213">📞 Call Karein</a>
+<a class="btn wa" href="https://wa.me/918082791213" target="_blank">💬 WhatsApp</a>
+<a class="btn dir" href="https://www.google.com/maps/search/?api=1&amp;query=Sezzan+Dhaba+Mumbra" target="_blank">📍 Rasta (Directions)</a>
+</div>
+<img src="https://picsum.photos/seed/sezzanhero/900/520" alt="Sezzan Dhaba">
+</div>
+<div class="marq"><span>BOOM BOOM CHICKEN ✦ LAHSUN CHANA ✦ MALPUA ✦ CHICKEN CHEESY ✦ WAFFLES & MOCKTAILS ✦ RAAT 2 BAJE TAK ✦ BOOM BOOM CHICKEN ✦ LAHSUN CHANA ✦ MALPUA ✦ CHICKEN CHEESY ✦ WAFFLES & MOCKTAILS ✦ RAAT 2 BAJE TAK ✦ </span></div>
+<section class="slide">
+<h2>Hamare Baare Me</h2>
+<p class="sub">Bombay Pune Road, Shilphata par sthit Sezzan Dhaba Mumbra ke late-night khane ka pasandeeda adda hai. Zameen par baith kar khane ka asli dhaba maza, budget-friendly daam aur raat der tak khula rehna — yahi iski pehchan hai. Family aur doston ke saath dinner ke liye sabse sahi jagah.</p>
+</section>
+<section class="slide r">
+<h2>⭐ Mashhoor Specials</h2>
+<p class="sub">Jo khana yahan ke customers baar-baar mangte hain:</p>
+<div class="grid"><div class="dish"><img src="https://picsum.photos/seed/sz1/600/400" alt="Boom Boom Chicken"><div><b>Boom Boom Chicken</b><p>Yahan ka sabse mashhoor non-veg special — masaledar aur bharpur swad.</p></div></div><div class="dish"><img src="https://picsum.photos/seed/sz2/600/400" alt="Malpua"><div><b>Malpua</b><p>Mumbra ka No.1 Malpua — khaas taur par Ramzan me sabse zyada bheed yahi hoti hai.</p></div></div><div class="dish"><img src="https://picsum.photos/seed/sz3/600/400" alt="Lahsun Chana"><div><b>Lahsun Chana</b><p>Dhaba-style lahsun chana — teekha, chatpata aur khane ke saath perfect starter.</p></div></div><div class="dish"><img src="https://picsum.photos/seed/sz4/600/400" alt="Chicken Cheesy"><div><b>Chicken Cheesy</b><p>Cheese se bhara chicken special, bachon aur bado dono ka favourite.</p></div></div><div class="dish"><img src="https://picsum.photos/seed/sz5/600/400" alt="Chicken Lamba Dry"><div><b>Chicken Lamba Dry</b><p>Dry masala chicken — dhaba style teekha swad.</p></div></div><div class="dish"><img src="https://picsum.photos/seed/sz6/600/400" alt="Waffles & Mocktails"><div><b>Waffles & Mocktails</b><p>Khane ke baad meetha aur thanda — waffles aur mocktails bhi milte hain.</p></div></div></div>
+</section>
+<section class="slide">
+<h2>Menu Highlights</h2>
+<p class="sub">Daam budget-friendly hain — poora menu aur aaj ke specials ke liye call ya WhatsApp karein.</p>
+<div class="menu"><ul><li><span>Boom Boom Chicken</span><span class="pr">Special</span></li><li><span>Malpua (Mumbra Famous)</span><span class="pr">Special</span></li><li><span>Lahsun Chana</span><span class="pr">Starter</span></li><li><span>Chicken Cheesy</span><span class="pr">Special</span></li><li><span>Chicken Mongolian Dry</span><span class="pr">Chinese</span></li><li><span>Waffles & Mocktails</span><span class="pr">Dessert</span></li></ul></div>
+</section>
+<section class="slide r">
+<h2>Gallery</h2>
+<div class="gal"><img src="https://picsum.photos/seed/sezzang1/500/400" alt="Sezzan Dhaba photo 1"><img src="https://picsum.photos/seed/sezzang2/500/400" alt="Sezzan Dhaba photo 2"><img src="https://picsum.photos/seed/sezzang3/500/400" alt="Sezzan Dhaba photo 3"><img src="https://picsum.photos/seed/sezzang4/500/400" alt="Sezzan Dhaba photo 4"></div>
+<p class="note">Photos representative hain — asli photos final website me owner ki gallery se lagenge.</p>
+</section>
+<section class="slide">
+<h2>Sampark (Contact)</h2>
+<div class="info"><div class="box"><b>🕐 Samay (Hours)</b>Roz shaam 7:00 — raat 2:00</div><div class="box"><b>📍 Pata (Address)</b>Bombay Pune Road, Shilphata, Kausar Hotel ke saamne, Mumbra, Thane</div><div class="box"><b>📞 Phone</b>+918082791213<br><a href="tel:+918082791213">Abhi call karein</a></div></div>
+</section>
+<section class="slide r">
+<div class="pitch">
+<h2>Ye Website Ek FREE Demo Hai</h2>
+<p style="color:#d8cbb6;max-width:560px;margin:10px auto 0">Ye demo <b style="color:#fff">GK Web Design</b> ne is business ke liye khaas banaya hai. Google par aapko dhundhne wale customers ko aaj sirf listing dikhti hai — apni website hogi to call aur order sidha aapke paas aayenge.</p>
+<div class="cards">
+<div class="pc"><b>Starter</b><div class="price">₹5,000</div><ul><li>1-page website</li><li>Menu + photos</li><li>Call / WhatsApp button</li><li>Google Map</li></ul></div>
+<div class="pc"><b>Business</b><div class="price">₹10,000</div><ul><li>4–5 pages</li><li>Online order enquiry</li><li>Google setup madad</li><li>1 mahina support</li></ul></div>
+<div class="pc"><b>Premium</b><div class="price">₹15,000</div><ul><li>Sab kuch Business wala</li><li>Apna domain naam (.in)</li><li>Offers / updates section</li><li>3 mahina support</li></ul></div>
+</div>
+<p style="margin-top:20px;color:#d8cbb6">Baat karne ke liye: <b style="color:#fff">Garry K — GK Web Design</b> (demo pasand aaye to Facebook message ka jawab dein, baaki hum sambhal lenge)</p>
+</div>
+</section>
+<footer>Sezzan Dhaba • Mumbra<br>Demo website by GK Web Design</footer>
+<div class="callbar"><a class="c1" href="tel:+918082791213">📞 Call</a><a class="c2" href="https://wa.me/918082791213" target="_blank">💬 WhatsApp</a></div>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.slide').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
